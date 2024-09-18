@@ -1,0 +1,85 @@
+@import "../../../theme/web/custom-variables";
+@import "../../../themesource/atlas_core/web/variables";
+
+.toast {
+	position: fixed;
+	z-index: 9999;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	filter: drop-shadow(2px 2px 5px #CCC);
+	cursor: pointer;
+
+	&.show {
+		opacity: 1;
+	}
+
+	/* Location classes */
+	&.TopLeft {
+		top: 10px;
+		left: 10px;
+	}
+	&.TopCenter {
+		width: 300px;
+		top: 10px;
+        left: 50%;
+		margin-left: -160px;
+	}
+	&.TopRight {
+		top: 10px;
+		right: 10px;
+	}
+	&.BottomRight {
+		bottom: 10px;
+		right: 10px;
+	}
+	&.BottomCenter {
+		width: 300px;
+		bottom: 10px;
+        left: 50%;
+		margin-left: -160px;
+	}
+	&.BottomLeft {
+		bottom: 10px;
+		left: 10px;
+	}
+
+	/* Style classes */
+	&._Default {
+		color: #fff;
+		border-color: #000;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	&.Inverse {
+		color: $alert-secondary-color;
+	    border-color: $alert-secondary-border-color;
+	    background-color: $alert-secondary-bg;
+	}
+	&.Primary {
+		color: $alert-primary-color;
+    	border-color: $alert-primary-border-color;
+    	background-color: $alert-primary-bg;
+	}
+	&.Info {
+		background-color: $callout-info-bg;
+		color: $callout-info-color;
+	}
+	&.Success {
+		color: $alert-success-color;
+	    border-color: $alert-success-border-color;
+	    background-color: $alert-success-bg;
+	}
+	&.Warning {
+		color: $alert-warning-color;
+	    border-color: $alert-warning-border-color;
+	    background-color: $alert-warning-bg;
+	}
+	&.Danger {
+		color: $alert-danger-color;
+	    border-color: $alert-danger-border-color;
+	    background-color: $alert-danger-bg;
+	}
+}

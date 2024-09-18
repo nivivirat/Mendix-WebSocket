@@ -26226,6 +26226,85 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   opacity: 0.6;
 }
 
+.toast {
+  position: fixed;
+  z-index: 9999;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  filter: drop-shadow(2px 2px 5px #CCC);
+  cursor: pointer;
+  /* Location classes */
+  /* Style classes */
+}
+.toast.show {
+  opacity: 1;
+}
+.toast.TopLeft {
+  top: 10px;
+  left: 10px;
+}
+.toast.TopCenter {
+  width: 300px;
+  top: 10px;
+  left: 50%;
+  margin-left: -160px;
+}
+.toast.TopRight {
+  top: 10px;
+  right: 10px;
+}
+.toast.BottomRight {
+  bottom: 10px;
+  right: 10px;
+}
+.toast.BottomCenter {
+  width: 300px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -160px;
+}
+.toast.BottomLeft {
+  bottom: 10px;
+  left: 10px;
+}
+.toast._Default {
+  color: #fff;
+  border-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.toast.Inverse {
+  color: #172c89;
+  border-color: #1b34a0;
+  background-color: #d4dbfa;
+}
+.toast.Primary {
+  color: #172c89;
+  border-color: #1b34a0;
+  background-color: #d4dbfa;
+}
+.toast.Info {
+  background-color: #cce7f7;
+  color: #0086d9;
+}
+.toast.Success {
+  color: #246b25;
+  border-color: #2a7d2b;
+  background-color: #d8f0d8;
+}
+.toast.Warning {
+  color: #8e6311;
+  border-color: #a57414;
+  background-color: #fbedd2;
+}
+.toast.Danger {
+  color: #88262f;
+  border-color: #9f2c37;
+  background-color: #f9d9dc;
+}
+
 .table {
   position: relative;
   border-width: 0;
